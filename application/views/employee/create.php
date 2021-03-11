@@ -17,12 +17,58 @@
                                     <input id="name" name="name" type="text" class="required form-control" placeholder = "Enter Full Name">
                                 </div>
                                 <div class = "col-4">
+                                    <label for="mobile">Mobile *</label>
+                                    <input id="mobile" name="mobile" type="text" class="required form-control" placeholder = "Enter Mobile No.">
+                                </div>
+                                <div class = "col-4">
+                                    <label for="alternate-no">Alternate No. </label>
+                                    <input id="alternate_no" name="alternate_no" type="text" class="form-control" placeholder = "Enter Alternate No. ">
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class = "card">
+                        <div class = "card-body">
+                            <div class = "row">
+                                <div class = "col-6">
+                                    <label for="telephone">Telephone No. *</label>
+                                    <input id="telephone" name="telephone" type="text" class="form-control" placeholder = "Enter Telephone No.">
+                                </div>
+                                <div class = "col-6">
                                     <label for="email">Email *</label>
                                     <input id="email" name="email" type="email" class="required form-control" placeholder = "Enter Email">
                                 </div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-6">
+                                    <label for="permanent-address">Permanent Address *</label>
+                                    <textarea name="permanent_address" id="permanent_address" cols="30" rows="10" placeholder = "Enter Permanent Address" class = "required form-control"></textarea>
+                                </div>
+                                <div class="col-6">
+                                    <label for="temporary-address">Temporary Address </label>
+                                    <textarea name="temporary_address" id="temporary_address" cols="30" rows="10" placeholder = "Enter Temporary Address" class = "form-control"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-4">
+                                    <label for="company-name">Company Name *</label>
+                                    <input type="text" name = "company_name" id = "company_name" class = "form-control required" placeholder = "Enter Company Name">
+                                </div>
+                                <div class="col-4">
+                                    <label for="company-address">Company Address *</label>
+                                    <textarea name="company_address" id="company_address" cols="30" rows="10" class = "form-control required" placeholder = "Enter Company Address"></textarea>
+                                </div>
                                 <div class = "col-4">
-                                    <label for="mobile">Mobile *</label>
-                                    <input id="mobile" name="mobile" type="text" class="required form-control" placeholder = "Enter Mobile No.">
+                                    <label for="contact-no">Company Contact No. *</label>
+                                    <input type="text" name = "com_cnt_no" id = "com_cnt_no" class = "form-control required" placeholder = "Enter Company Contact No.">
                                 </div>
                             </div>
                         </div>
@@ -47,6 +93,24 @@
                                                 echo "<option value = '".$valueDept['dept_id']."'>".$valueDept['department_name']."</option>";
                                             }
                                         ?>
+                                    </select>
+                                </div>
+                                <div class="col-4">
+                                    <label for="sub-dept">Sub Department *</label>
+                                    <select name="sub_department" id="sub_department" class = "form-control" required>
+                                            <option value="0"> Select Sub Department </option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="card-body">
+                            <div class = "row">
+                                <div class = "col-4">
+                                    <label for="designation">Designation *</label>
+                                    <select name="designation" id="designation" class = "form-control" required>
+                                        <option value="0"> Select Designation </option>
                                     </select>
                                 </div>
                                 <div class = "col-4">
